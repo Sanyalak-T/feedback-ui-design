@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>Verify Account</title>
+    <title>Let Us Know Your Feedback</title>
   </head>
   <body>
-    <div class="container">
-      <h2>Verify Your Account</h2>
-      <p>We emailed you the six digit code to cool_guy@email.com <br> Enter the code below to confirm your email address.</p>
-      <div class="code-container">
-        <input type="number" class="code" placeholder="0" min="0" max="0" required>
-        <input type="number" class="code" placeholder="0" min="0" max="0" required>
-        <input type="number" class="code" placeholder="0" min="0" max="0" required>
-        <input type="number" class="code" placeholder="0" min="0" max="0" required>
-        <input type="number" class="code" placeholder="0" min="0" max="0" required>
-        <input type="number" class="code" placeholder="0" min="0" max="0" required>
+    <div id="panel" class="panel-container">
+      <strong>How satisfied are you with our <br> customer support performance</strong>
+      <div class="ratings-container">
+        <div class="rating">
+          <img src="https://cdn.pixabay.com/photo/2013/07/12/15/01/disapprove-149251__340.png" alt="unhappy">
+          <small>Unhappy</small>
+        </div>
+        <div class="rating">
+          <img src="https://cdn.pixabay.com/photo/2020/12/30/01/51/emoji-5872140__340.png" alt="neutral">
+          <small>Neutral</small>
+        </div>
+        <div class="rating active">
+          <img src="https://cdn.pixabay.com/photo/2017/01/15/15/49/smiley-1981935__340.png" alt="satisfied">
+          <small>Satisfied</small>
+        </div>
       </div>
-      <small class="info">This is design only. we didn't actually send you an email as we don't have you email. right?</small>
+      <button class="btn" id="send">Send Review</button>
     </div>
 
     <script src="script.js"></script>
